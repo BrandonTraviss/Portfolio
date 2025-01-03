@@ -1,0 +1,217 @@
+*{
+    font-family: Merriweather;
+    color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 5px solid gold;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgb(30, 24, 69);
+}
+
+.left-nav {
+   margin-right: auto;
+}
+.desk-link:hover{
+    color: wheat;
+}
+.desk-link{
+    font-weight: bold;
+    text-decoration: none;
+    margin-inline: 1rem;
+    display: inline;
+}
+.nav-desk{
+    display: flex;
+}
+.nav-modal{
+    background-color: rgba(0, 0, 0, 0.912);
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.nav-list li{
+    list-style: none;
+    margin-block: 1rem;
+}
+.nav-list li a{
+    text-decoration: none;
+}
+.nav-list li a:hover{
+    color: wheat;
+}
+.blur {
+    filter: blur(5px);
+}
+.burger-menu-div {
+    z-index: 10;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    color: white;
+    width: 25px;
+    height: 25px;
+}
+.hidden {
+    display: none;
+}
+.shown {
+    display:flex;
+}
+.black{
+    color: black;
+}
+.heading {
+    display: flex;
+    justify-content: center;
+    margin-top: 7.75rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+.flex{
+    display: flex;
+}
+.flex-row{
+    flex-direction: row;
+}
+.mb-auto{
+    margin-bottom: auto;
+}
+.center{
+    justify-content: center;
+}
+.git-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.card {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 235, 242);
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-size:xx-large ;
+    font-weight: bold;
+    color: black;
+    width: 200px;
+    border-radius: 10px;
+}
+.title {
+    color: black;
+    font-size: x-large;
+    margin-bottom: 1rem;
+}
+.card:nth-last-child(){
+    justify-content: flex-end;
+}
+.card-img{
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    width: 150px;
+}
+.link-div{
+    color: blue;
+    font-size: medium;
+}
+.link {
+    font-size: small;
+    text-decoration: none;
+    color: rgb(98, 98, 245);
+}
+.link:hover{
+    color: blue;
+}
+.link-div{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.what-am-i-looking-for{
+    margin-block: 3rem;
+    text-align: center;
+}
+.about-me{
+    width: 500px;
+    text-align: left;
+}
+.about-me-div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    padding: 1rem;
+}
+.card-description {
+    color: black;
+    font-size: medium;
+    justify-content: flex-end;
+}
+.desc-links {
+    margin-top: auto;
+}
+.about-hero{
+    background-color: rgb(233, 230, 255);
+ display: flex;
+ justify-content: space-around;
+ padding-top: 1rem;
+ padding-bottom: 3rem;
+ border-bottom: 1px solid black;
+}
+.underline{
+    text-decoration: underline;
+}
+.no-dec {
+    list-style: none;
+}
+.center {
+    text-align: center;
+}
+.skills {
+    color: white;
+    padding-block: 1rem;
+    border-block: 2px solid gold;
+    background-color: rgb(30, 24, 69);
+}
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 800px) {
+    .desk-link {
+      display: none;
+    }
+    .burger-menu-div {
+        display: flex;
+    }
+    .flex-row {
+        flex-direction: column;
+    }
+    .center {
+        align-items: center;
+    }
+    .card {
+        width: 90vw;
+    }
+    .link-div{
+        padding-inline: 20vw;
+    }
+  }
