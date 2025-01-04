@@ -171,7 +171,7 @@ nav{
     margin-top: auto;
 }
 .about-hero{
-    background-color: rgb(233, 230, 255);
+background-color: rgb(221, 216, 255);
  display: flex;
  justify-content: space-around;
  padding-top: 1rem;
